@@ -1,0 +1,109 @@
+html,body,.out-size{
+    height: 100%;
+    width: 100%;
+}
+*{
+	padding:0;
+	margin:0;
+}
+.login-view{
+    background-color: #E5F3F5;
+    min-height: 770px;
+    height: 100%;
+    padding-top: 9rem;
+}
+.logo-view{
+    margin: 168px auto 0px auto;
+}
+.card-content{
+    background: #fff;
+    border-radius: 4px;
+    padding: 20px 20px 40px 20px;
+    box-shadow: 0 20px 60px 0 rgba(0,0,0,0.1);
+}
+
+
+
+/* 侧边栏样式 */
+.nopadding{
+    padding-right: 0px!important;
+}
+.panel-group{
+    min-height:770px!important;
+    background-color: #fb7a4f;
+}
+.panel-group .panel{
+    margin: 0px !important;
+    border: 0px !important;
+    box-shadow: none;
+}
+.header{
+    height: 50px;
+    line-height: 50px;
+    color:white;
+    cursor:pointer;
+    background-color:  #fb7a4f;
+    border-bottom: 1px solid #ddd
+}
+.header h2{
+    padding-left: 20px;
+}
+.leftMenu{margin:0px;}
+.leftMenu .panel-heading{
+    font-size:14px;
+    padding-left:20px;
+    height:40px;
+    line-height:40px;
+    color:white;
+    position:relative;
+    cursor:pointer;
+    background-color:  #fb7a4f;
+    border-radius: 0px;
+}
+.leftMenu .panel-heading span{position:absolute;right:10px;top:12px;}
+.leftMenu .menu-item-left{padding: 2px; background: transparent; }
+.leftMenu ul{
+    border: 0px !important;
+    /* border-bottom-right-radius: 15px; */
+}
+.leftMenu ul li{
+    border: 0px;
+    margin: 0px;
+    padding-left: 25px;
+    background-color:rgba(255,153,51,0.8);
+    cursor: pointer;
+    border-radius: 0px !important;
+}
+.leftMenu ul li:first-child{
+    box-shadow:0px 14px 8px -10px #CC6600 inset;
+}
+.leftMenu ul li:hover{
+    transition: all 1s ease;
+    background-color: #FF9933 ;
+}
+
+.leftMenu ul li a{
+    color: #fff;
+    font-size: 15px;
+
+}
+@media screen and (max-width: 991px) {
+    .panel-group{
+        min-height:100%!important;
+    }
+}
+
+
+/* 新闻列表样式 */
+.newsbackground{
+    background-color:#E5F3F5 ;
+    min-height: 770px!important;
+    border-left: 30px solid rgba(255,153,51,0.8);
+    border-top: 10px solid rgba(255,153,51,0.8);
+    border-bottom: 10px solid rgba(255,153,51,0.8);
+}
+
+
+
+
+

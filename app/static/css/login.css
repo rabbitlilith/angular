@@ -1,0 +1,14 @@
+
+.titlebar{
+	background-color: black;
+	font-size: 15px;
+}
+.titlebar a{
+	color: white;
+	text-decoration: none;
+}
+
+.login-signup-button button{
+    background-color: #FF865E!important;
+    color: white;
+}

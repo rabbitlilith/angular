@@ -1,0 +1,92 @@
+<div ng-controller="menuController" class="">
+    <div class="row">
+        <div class="col-md-2 nopadding">
+            <div class="panel-group table-responsive" role="tablist">
+                 <div class="header">
+                    <h2>Username</h2>
+                </div>
+                <div class="panel leftMenu">
+                    <div class="panel-heading" id="collapseListGroupHeading1" data-toggle="collapse" data-target="#collapseListGroup1" role="tab" >
+                        <h4 class="panel-title">
+                            国内新闻
+                            <span class="glyphicon glyphicon-chevron-up right"></span>
+                        </h4>
+                    </div>
+                    <div id="collapseListGroup1" class="panel-collapse collapse in " role="tabpanel" aria-labelledby="collapseListGroupHeading1">
+                        <ul class="list-group">
+                            <li class="list-group-item"><a  ui-sref="menu.mainland">内陆新闻</a></li>
+                            <li class="list-group-item"><a ui-sref="menu.noinland">港澳台新闻</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="panel leftMenu">
+                    <div class="panel-heading" id="collapseListGroupHeading2" data-toggle="collapse" data-target="#collapseListGroup2" role="tab" >
+                        <h4 class="panel-title">
+                            国际新闻
+                            <span class="glyphicon glyphicon-chevron-down right"></span>
+                        </h4>
+                    </div>
+                    <div id="collapseListGroup2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="collapseListGroupHeading2">
+                        <ul class="list-group">
+                            <li class="list-group-item"><a>环球视野</a></li>
+                            <li class="list-group-item"><a>环球趣闻</a></li>
+                            <li class="list-group-item"><a>海外观察</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="panel leftMenu">
+                    <div class="panel-heading" id="collapseListGroupHeading3" data-toggle="collapse" data-target="#collapseListGroup3" role="tab" >
+                        <h4 class="panel-title">
+                            社会新闻
+                            <span class="glyphicon glyphicon-chevron-down right"></span>
+                        </h4>
+                    </div>
+                    <div id="collapseListGroup3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="collapseListGroupHeading3">
+                        <ul class="list-group">
+                            <li class="list-group-item"><a>情感八卦</a></li>
+                            <li class="list-group-item"><a>拍案说法</a></li>
+                            <li class="list-group-item"><a>奇闻趣事</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="panel leftMenu">
+                    <div class="panel-heading" id="collapseListGroupHeading4" data-toggle="collapse" data-target="#collapseListGroup4" role="tab" >
+                        <h4 class="panel-title">
+                            军事新闻
+                            <span class="glyphicon glyphicon-chevron-down right"></span>
+                        </h4>
+                    </div>
+                    <div id="collapseListGroup4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="collapseListGroupHeading4">
+                        <ul class="list-group">
+                            <li class="list-group-item"><a>东海局势</a></li>
+                            <li class="list-group-item"><a>大国博弈</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="panel leftMenu">
+                    <div class="panel-heading" id="collapseListGroupHeading5" data-toggle="collapse" data-target="#collapseListGroup5" role="tab" >
+                        <h4 class="panel-title">
+                            数据分析
+                            <span class="glyphicon glyphicon-chevron-down right"></span>
+                        </h4>
+                    </div>
+                    <div id="collapseListGroup5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="collapseListGroupHeading5">
+                        <ul class="list-group">
+                            <li class="list-group-item"><a>按月分析</a></li>
+                            <li class="list-group-item"><a>按类别分析</a></li>
+                        </ul>
+                    </div>
+                </div>             
+            </div>
+        </div>
+        <div class="col-md-10 newsbackground" ui-view=""></div>
+    </div>   
+</div>
+<script>
+    $(function(){
+        $(".panel-heading").click(function(e){
+            $(this).find("span").toggleClass("glyphicon-chevron-down");
+            $(this).find("span").toggleClass("glyphicon-chevron-up");
+        });
+    });
+</script>
